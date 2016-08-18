@@ -2,7 +2,7 @@
   "name": "react-simple-table",
   "version": "1.0.0",
   "description": "@zambezi/react-simple-table",
-  "main": "dist/main.js",
+  "main": "dist/react-simple-table.js",
   "dependencies": {
     "@zambezi/simple-table": "^1.0.1"
   },
@@ -27,7 +27,12 @@
     "rollup-plugin-babel": "^2.6.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "mkdirp dist && rollup -c",
+    "clean": "rimraf dist",
+    "watch": "rollup -c -w",
+    "test": "mocha",
+    "pretest": "npm run clean && npm run build",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
