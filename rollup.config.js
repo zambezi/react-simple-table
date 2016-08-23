@@ -1,13 +1,18 @@
 import babel from 'rollup-plugin-babel'
-import babelrc from 'babelrc-rollup'
 
 export default {
-  entry: 'src/index.js',
+  entry: 'src/index.jsx',
   dest: 'dist/react-simple-table.js',
   format: 'umd',
   moduleName: 'reactSimpleTable',
-  external: ['@zambezi/simple-table'],
+  external: ['react', 'react-dom'],
   sourceMap: true,
-  plugins: [ babel(babelrc()) ],
-  globals: { }
+  plugins: [ babel({
+    "presets": [["es2015", { "modules": false }], "react"],
+    "plugins": ["external-helpers"]
+  }) ],
+  globals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  }
 }
