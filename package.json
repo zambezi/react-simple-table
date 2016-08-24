@@ -5,8 +5,9 @@
   "main": "dist/react-simple-table.js",
   "dependencies": {
     "@zambezi/simple-table": "^1.0.1",
-    "react-dom": "^15.3.0",
-    "react": "^15.3.0"
+    "d3": "^4.2.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.8.0",
