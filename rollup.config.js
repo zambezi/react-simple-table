@@ -9,7 +9,8 @@ export default {
   sourceMap: true,
   plugins: [ babel({
     "presets": [["es2015", { "modules": false }], "react"],
-    "plugins": ["external-helpers"]
+    "plugins": ["external-helpers"],
+    "babelrc": false
   }) ],
   globals: {
     'react': 'React',
