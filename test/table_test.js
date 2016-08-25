@@ -1,5 +1,6 @@
 import Table from '../src'
 import { strictEqual } from 'assert'
+import { shallow } from 'enzyme'
 
 describe('react-simple-table', () => {
 
