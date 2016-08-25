@@ -8,7 +8,7 @@ export class Table extends React.Component {
   static get propTypes() {
     return {
       rows: React.PropTypes.array
-    , columns: React.PropTypes.arrayOf(React.PropTypes.object)
+    , columns: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
     }
   }
 
@@ -16,6 +16,9 @@ export class Table extends React.Component {
     this.setupTable()
   }
 
+  componentDidUpdate() {
+    this.setupTable()
+  }
   setupTable() {
     const target = d3.select(ReactDOM.findDOMNode(this))
         , props = this.props
