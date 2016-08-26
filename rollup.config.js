@@ -16,6 +16,6 @@ export default {
     'react': 'React',
     'react-dom': 'ReactDOM',
     '@zambezi/simple-table': 'simpleTable',
-    'd3': 'd3'
+    'd3-selection': 'd3'
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import d3 from 'd3'
+import { select } from 'd3-selection'
 import simpleTable from '@zambezi/simple-table'
 
 export class Table extends React.Component {
@@ -21,7 +21,7 @@ export class Table extends React.Component {
   }
 
   setupTable() {
-    const target = d3.select(ReactDOM.findDOMNode(this))
+    const target = select(ReactDOM.findDOMNode(this))
         , props = this.props
         , table = simpleTable.createTable()
                     .columns(props.columns)
