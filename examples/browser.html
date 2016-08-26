@@ -40,14 +40,24 @@
       , { key: 'price', label: 'Price', format: priceFormatter }
       ]
 
-  ReactDOM.render(React.createElement(
+  draw([ rows[0] ])
+
+  function draw(selected) {
+    ReactDOM.render(React.createElement(
       reactSimpleTable,
       { // props
         rows: rows
       , columns: columns
+      , selected: selected
+      , select: addToSelection
       }
     ),
     document.getElementById('target'))
+  }
+
+  function addToSelection(row) {
+    draw([ row ])
+  }
 
   function addressFormatter(row) {
     return row.address.city

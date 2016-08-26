@@ -19,10 +19,15 @@ export class Table extends React.Component {
   componentDidUpdate() {
     this.setupTable()
   }
+
   setupTable() {
     const target = d3.select(ReactDOM.findDOMNode(this))
         , props = this.props
-        , table = simpleTable.createTable().columns(props.columns)
+        , table = simpleTable.createTable()
+                    .columns(props.columns)
+                    .on('select', props.select)
+
+    if (props.selected) table.selected(props.selected)
 
     target.datum(props.rows).call(table)
   }
