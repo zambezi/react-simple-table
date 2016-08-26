@@ -8,3 +8,16 @@ describe('react-simple-table', () => {
     strictEqual(Table, 'Table!', 'Not the same :(')
   })
 })
+
+
+// the trivial table
+// rows = undefined
+// columns = [{}]
+// <table data-reactroot="">
+//   <thead>
+//     <tr>
+//       <th></th>
+//     </tr>
+//   </thead>
+//   <tbody></tbody>
+// </table>
