@@ -17,6 +17,7 @@
     "babel-register": "^6.11.6",
     "d3-dispatch": "^1.0.1",
     "enzyme": "^2.3.0",
+    "jsdom": "^9.4.2",
     "mkdirp": "^0.5.1",
     "mocha": "^2.5.3",
     "react-addons-test-utils": "^15.3.1",
