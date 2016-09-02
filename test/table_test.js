@@ -16,7 +16,7 @@ describe('react-simple-table', () => {
   it('should render a trivial table with empty columns', () => {
     const actual = mount(<SimpleTable columns={[]}/>).html()
         , expected = mount(<TrivialTable />).html()
-    equal(actual, expected, 'Rendering ')
+    equal(actual, expected, 'trivial default arguments should render a trivial table')
   })
 
   it('should set all known properties', () => {
@@ -41,3 +41,4 @@ function TrivialTable() {
     <tbody></tbody>
   </table>
 }
+gp
