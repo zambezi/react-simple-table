@@ -24,18 +24,16 @@ export class Table extends React.Component {
 
   setupTable() {
     const target = select(ReactDOM.findDOMNode(this))
-        , props = this.props
+        , { columns, rows, selected, onSelect } = this.props
         , table = simpleTable.createTable()
-                    .columns(props.columns)
-                    .on('select', props.onSelect)
+                    .columns(columns)
+                    .on('select', onSelect)
 
-    if (props.selected) table.selected(props.selected)
-
-    target.datum(props.rows).call(table)
+    if (selected) table.selected(selected)
+    target.datum(rows).call(table)
   }
 
   render() {
     return <table></table>
   }
-
 }
