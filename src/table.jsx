@@ -27,7 +27,7 @@ export class Table extends React.Component {
         , props = this.props
         , table = simpleTable.createTable()
                     .columns(props.columns)
-                    .on('select', props.select)
+                    .on('select', props.onSelect)
 
     if (props.selected) table.selected(props.selected)
 

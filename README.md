@@ -102,7 +102,7 @@ function draw(selected=[]) {
       columns={ columns }
       rows={ rows }
       selected={ selected }
-      select={ addToSelection }
+      onSelect={ addToSelection }
       />
   , document.querySelector('#react-simple-table')
   )
