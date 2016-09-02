@@ -9,7 +9,7 @@ export class Table extends React.Component {
     return {
       rows: React.PropTypes.array
     , columns: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
-    , select: React.PropTypes.func
+    , onSelect: React.PropTypes.func
     , selected: React.PropTypes.arrayOf(React.PropTypes.object)
     }
   }
