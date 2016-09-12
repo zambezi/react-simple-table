@@ -1,3 +1,6 @@
 *.log
 .DS_Store
 test
+examples
+.babelrc
+rollup.config.js
