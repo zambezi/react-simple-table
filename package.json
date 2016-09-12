@@ -1,7 +1,7 @@
 {
-  "name": "react-simple-table",
+  "name": "@zambezi/react-simple-table",
   "version": "1.0.0",
-  "description": "@zambezi/react-simple-table",
+  "description": "A React wrapper for @zambezi/simple-table",
   "main": "dist/react-simple-table.js",
   "dependencies": {
     "@zambezi/simple-table": "^1.0.1",
@@ -31,7 +31,8 @@
     "build": "mkdirp dist && rollup -c",
     "clean": "rimraf dist",
     "watch": "rollup -c -w",
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",

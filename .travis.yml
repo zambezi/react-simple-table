@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+- '6'
+- '4'
+deploy:
+  provider: npm
+  email: marcus@stade.se
+  skip_cleanup: true
+  api_key:
+    secure: EuzubTs0Bo4GCSS1gLigXjvlKSFowkwYOzO0JC6HEzrI9a3Gur4eh43o0YNdz89sMeQ4TFV/N83SNHQpFMv4sKeTQ541AeUuuchNlFP1Ou6DsbChB2d4u/iyo6H21BuKN03SkQqbGxIt9JftephYqF58Mc0PuEQ6qWtIfcHjs0ZnkXs26e/xBwyRnolCJboK3O/DmLng41KjGGDRnK7kQXn7dUtiXeYSDm895LOMr3jE/v0d6ius5NJFGRw+lxTnQX46PtUyNzV1S1W8Tw9HvnrJIFW/wjuprZkq0Q7+aGXWa8ilK8DEHPRb3Fimct68JGCfE04ljimtxGi0TztjPyWzGvrMM4HFLINSBvvPs7cpDE13W1HrvmAKPid47Kw/YsqEE0OnG9LATndRZuq4vGvYM7p5mSV/RbMaUS+BFE3qOcLB7JKs/yp4wXr1+4icRPEUWMpENSLwQy4/U8iaf9iph7dqvvGc+7mxPetZYjQVrSz+MYpYb26uKnDEUOi5c4Px5P5jQunRZ0HhhBmpIcRtA3N90Z9RxEYtcPFOocD13+aTH3N9Y0AFNtn2833ZTD/S+/P9F2yd0qU3zAMzbHGkr4dYAFlSKfbCs5mzzhH2ipXIVBrf81Jl0i5uBv5rB2h5MBFA1SY3Pdu3jRIpfvcjX1V313NTscklyXofUpE=
+  on:
+    tags: true
+    repo: zambezi/react-simple-table
+    all_branches: true
