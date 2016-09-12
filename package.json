@@ -1,6 +1,6 @@
 {
   "name": "@zambezi/react-simple-table",
-  "version": "1.0.0-ci-integration.3",
+  "version": "1.0.0",
   "description": "A React wrapper for @zambezi/simple-table",
   "main": "dist/react-simple-table.js",
   "dependencies": {
